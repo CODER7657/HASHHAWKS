@@ -23,12 +23,12 @@ const Services = () => {
   return (
     <section className="py-16 md:py-24" aria-labelledby="services">
       <div className="container mx-auto">
-        <h2 id="services" className="text-3xl md:text-4xl font-display mb-10">What we build</h2>
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <h2 id="services" className="text-3xl md:text-4xl font-display mb-10 text-center" data-reveal>What we build</h2>
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3" data-parallax-y="3">
           {services.map(({ icon: Icon, title, desc }) => (
-            <Card key={title} className="glass hover-scale">
-              <CardHeader>
-                <div className="inline-flex h-12 w-12 items-center justify-center rounded-lg bg-secondary">
+            <Card key={title} className="glass hover-scale" data-reveal>
+              <CardHeader className="text-center">
+                <div className="mx-auto inline-flex h-12 w-12 items-center justify-center rounded-lg bg-secondary">
                   <Icon className="text-primary" />
                 </div>
                 <CardTitle className="mt-4 font-display">{title}</CardTitle>

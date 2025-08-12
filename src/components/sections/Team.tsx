@@ -84,10 +84,8 @@ function TeamCard({ img, name, role }: { img: string; name: string; role: string
           />
         </div>
       </CardHeader>
-      <CardContent className="p-5">
+      <CardContent className="p-5 text-center">
         <CardTitle className="font-display text-xl">{name}</CardTitle>
-        <p className="text-muted-foreground mt-1">{role}</p>
-        <p className="text-xs text-muted-foreground mt-3">Tip: click & drag horizontally for 360° roam</p>
       </CardContent>
     </Card>
   );
@@ -97,8 +95,8 @@ const Team = () => {
   return (
     <section className="py-16 md:py-24" aria-labelledby="team">
       <div className="container mx-auto">
-        <h2 id="team" className="text-3xl md:text-4xl font-display mb-10" data-reveal>Leadership</h2>
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <h2 id="team" className="text-3xl md:text-4xl font-display mb-10 text-center" data-reveal>Leadership</h2>
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4" data-parallax-y="2">
           {members.map((m) => (
             <TeamCard key={m.name} img={m.img} name={m.name} role={m.role} />
           ))}
