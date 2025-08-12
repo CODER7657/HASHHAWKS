@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
-const SPLINE_SCENE_URL = ""; // Add your Spline public URL here (scene.splinecode)
+const SPLINE_SCENE_URL = "https://my.spline.design/particles-grsad9AoJrzt4a76VJM4b7cv/"; // Provided Spline public URL
 
 const Hero = () => {
   return (
