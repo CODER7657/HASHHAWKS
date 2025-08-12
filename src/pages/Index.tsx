@@ -2,6 +2,7 @@ import Hero from "@/components/sections/Hero";
 import Services from "@/components/sections/Services";
 import Team from "@/components/sections/Team";
 import { Button } from "@/components/ui/button";
+import ParallaxInit from "@/components/ParallaxInit";
 
 const Index = () => {
   return (
@@ -16,6 +17,7 @@ const Index = () => {
           </div>
         </div>
       </nav>
+      <ParallaxInit />
       <Hero />
       <Services />
       <Team />
