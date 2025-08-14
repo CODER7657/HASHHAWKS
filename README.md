@@ -1,73 +1,146 @@
-# Welcome to your Lovable project
+# HASHHAWKS
 
-## Project info
+A luxury decentralized application (DApp) website featuring cutting-edge 3D visual effects, parallax scrolling, and modern UI components.
 
-**URL**: https://lovable.dev/projects/298b56f7-5ecd-4e94-9798-014f45ce6b52
+## Overview
 
-## How can I edit this code?
+HASHHAWKS is a sophisticated web application that combines blockchain technology with premium visual design. The project showcases interactive 3D elements powered by Spline, smooth parallax animations, and a modern card-based layout featuring team member profiles with 360-degree interactions.
 
-There are several ways of editing your application.
+## Tech Stack
 
-**Use Lovable**
+- **React** - Modern JavaScript library for building user interfaces
+- **TypeScript** - Type-safe JavaScript for better development experience
+- **Vite** - Fast build tool and development server
+- **Tailwind CSS** - Utility-first CSS framework for rapid UI development
+- **shadcn/ui** - Modern component library built on Radix UI
+- **Spline** - 3D design tool for interactive web experiences
+- **PostCSS** - CSS post-processor for enhanced styling capabilities
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/298b56f7-5ecd-4e94-9798-014f45ce6b52) and start prompting.
+## Installation & Setup
 
-Changes made via Lovable will be committed automatically to this repo.
+### Prerequisites
+- Node.js (v18 or higher)
+- npm or bun package manager
 
-**Use your preferred IDE**
+### Install Dependencies
+```bash
+# Using npm
+npm install
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+# Using bun (recommended for better performance)
+bun install
 ```
 
-**Edit a file directly in GitHub**
+## Running the Application
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Development Server
+```bash
+# Using npm
+npm run dev
 
-**Use GitHub Codespaces**
+# Using bun
+bun run dev
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+The application will start on `http://localhost:5173`
 
-## What technologies are used for this project?
+### Production Build
+```bash
+# Using npm
+npm run build
 
-This project is built with:
+# Using bun
+bun run build
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Preview Production Build
+```bash
+# Using npm
+npm run preview
 
-## How can I deploy this project?
+# Using bun
+bun run preview
+```
 
-Simply open [Lovable](https://lovable.dev/projects/298b56f7-5ecd-4e94-9798-014f45ce6b52) and click on Share -> Publish.
+## Project Structure
 
-## Can I connect a custom domain to my Lovable project?
+```
+HASHHAWKS/
+├── public/                 # Static assets
+├── src/                   # Source code
+│   ├── components/        # Reusable UI components
+│   ├── lib/              # Utility functions and configurations
+│   └── App.tsx           # Main application component
+├── index.html            # Main HTML template
+├── package.json          # Project dependencies and scripts
+├── tailwind.config.ts    # Tailwind CSS configuration
+├── tsconfig.json         # TypeScript configuration
+├── vite.config.ts        # Vite build configuration
+└── components.json       # shadcn/ui components configuration
+```
 
-Yes, you can!
+## Key Features
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+- **Interactive 3D Elements**: Spline-powered 3D graphics and animations
+- **Parallax Scrolling**: Smooth scrolling effects for enhanced user experience
+- **360° Member Cards**: Interactive team member profiles with rotation effects
+- **Responsive Design**: Mobile-first approach with Tailwind CSS
+- **Type Safety**: Full TypeScript support for robust development
+- **Modern Component Architecture**: Built with shadcn/ui components
+- **Performance Optimized**: Fast loading times with Vite bundling
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## Deployment
+
+The project can be deployed to various hosting platforms:
+
+### Vercel (Recommended)
+```bash
+npm run build
+# Deploy the dist/ folder to Vercel
+```
+
+### Netlify
+```bash
+npm run build
+# Deploy the dist/ folder to Netlify
+```
+
+### GitHub Pages
+```bash
+npm run build
+# Deploy the dist/ folder to GitHub Pages
+```
+
+## Development Guidelines
+
+### Code Style
+- Use TypeScript for all new components
+- Follow the existing component structure
+- Use Tailwind CSS for styling
+- Implement responsive design patterns
+
+### Component Development
+- Place reusable components in `src/components/`
+- Use shadcn/ui components when possible
+- Follow the existing naming conventions
+- Add proper TypeScript types
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Support
+
+For support and questions, please open an issue in the GitHub repository.
+
+---
+
+*Built with ❤️ using modern web technologies*
